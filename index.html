@@ -1,137 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hannah Moses | Cloud & IT Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Cloud & IT Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fb;
-            color: #333;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: #f4f6fb;
+        color: #333;
+    }
 
-        header {
-            background: #1f4e79;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
+    /* HEADER */
+    header {
+        background: linear-gradient(135deg, #1f4e79, #2d89ef);
+        color: white;
+        text-align: center;
+        padding: 70px 20px;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+    header h1 {
+        margin: 0;
+        font-size: 42px;
+        animation: fadeIn 1s ease-in-out;
+    }
 
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
+    header p {
+        font-size: 18px;
+        margin-top: 10px;
+        opacity: 0.9;
+    }
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-            background: white;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
+    /* ANIMATION */
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-10px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
 
-        h2 {
-            color: #1f4e79;
-        }
+    /* SECTIONS */
+    section {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 20px;
+    }
 
-        ul {
-            line-height: 1.8;
-        }
+    h2 {
+        color: #1f4e79;
+        margin-bottom: 15px;
+    }
 
-        .contact a {
-            color: #1f4e79;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    /* CARD DESIGN */
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: gray;
-        }
-    </style>
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    ul {
+        line-height: 1.8;
+    }
+
+    /* SKILLS GRID */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    /* CONTACT */
+    a {
+        color: #2d89ef;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: gray;
+    }
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Hannah Moses</h1>
-    <p>Cloud & IT Support Professional | AWS Trainee | IT Fundamentals Certified</p>
+    <h1> Hannah Golluri|Cloud & IT Support Portfolio</h1>
+    <p>Cloud & IT Support Aspirant | AWS Trainee</p>
 </header>
 
 <section>
     <h2>About Me</h2>
-    <p>
-        I am an aspiring Cloud and IT professional currently building AWS skills through Per Scholas training.
-        I hold a Bachelor’s degree in Information Technology and Cisco certifications in operating systems and hardware.
-        After relocating from India to the United States, I developed strong skills in organization, multitasking,
-        and problem-solving while managing full-time responsibilities.
-    </p>
+    <div class="card">
+        An aspiring Cloud and IT Support professional with a Bachelor’s degree in Information Technology and AWS training through Per Scholas.
+        Completed Cisco certifications in Operating Systems and Computer Hardware. Strong foundation in IT fundamentals, troubleshooting,
+        and cloud basics with hands-on AWS lab experience.
+    </div>
 </section>
 
 <section>
     <h2>Skills</h2>
-    <ul>
-        <li>AWS Cloud Fundamentals (In Progress)</li>
-        <li>Windows & Linux Basics</li>
-        <li>Computer Hardware Troubleshooting</li>
-        <li>IT Support Fundamentals</li>
-        <li>Problem Solving & Communication</li>
-        <li>Time Management & Organization</li>
-    </ul>
+    <div class="grid">
+        <div class="card">☁️ AWS EC2, S3, IAM Basics</div>
+        <div class="card">🐧 Linux Operating System</div>
+        <div class="card">🪟 Windows Support</div>
+        <div class="card">🛠 Hardware Troubleshooting</div>
+        <div class="card">💬 Communication Skills</div>
+        <div class="card">⏱ Time Management</div>
+        <div class="card">🔧 IT Support Fundamentals</div>
+        <div class="card">🧠 Problem Solving</div>
+    </div>
 </section>
 
 <section>
     <h2>Education</h2>
-    <p><b>Bachelor of Technology – Information Technology</b><br>
-    Bhoj Reddy Engineering College, India<br>
-    First Class with Distinction (75%+)</p>
+    <div class="card">
+        <b>Bachelor of Technology – Information Technology</b><br>
+        Bhoj Reddy Engineering College, India<br>
+        First Class with Distinction (75%+)
+    </div>
 </section>
 
 <section>
     <h2>Certifications</h2>
-    <ul>
-        <li>Cisco – Operating Systems Basics</li>
-        <li>Cisco – Computer Hardware Basics</li>
-        <li>AWS Training (Per Scholas – In Progress)</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Experience</h2>
-    <p>
-        During a career break focused on relocation and parenting, I developed strong real-world skills in
-        organization, multitasking, adaptability, and problem-solving—skills that directly support IT environments.
-    </p>
+    <div class="card">
+        ✔ Cisco – Operating Systems Basics<br>
+        ✔ Cisco – Computer Hardware Basics<br>
+        ✔ AWS Training (Per Scholas – In Progress)
+    </div>
 </section>
 
 <section>
     <h2>Projects</h2>
-    <ul>
-        <li>AWS hands-on labs (EC2, S3, IAM basics)</li>
-        <li>System troubleshooting practice</li>
-        <li>Operating system configuration exercises</li>
-    </ul>
+
+    <div class="card">
+        <b>☁️ AWS EC2 Instance Deployment</b>
+        <p>Launched and configured EC2 instances, set up security groups, and connected via SSH.</p>
+    </div>
+
+    <div class="card">
+        <b>🐧 Linux Command Line Practice</b>
+        <p>Practiced file navigation, permissions, and system commands in Linux environment.</p>
+    </div>
+
+    <div class="card">
+        <b>🛠 IT Troubleshooting Labs</b>
+        <p>Completed structured troubleshooting scenarios involving OS and system issues.</p>
+    </div>
 </section>
 
-<section class="contact">
+<section>
+    <h2>Experience</h2>
+    <div class="card">
+        Developed strong organizational, multitasking, and problem-solving skills through real-life experience managing responsibilities during relocation and full-time parenting.
+    </div>
+</section>
+
+<section>
     <h2>Contact</h2>
-    <p>Email: your email here</p>
-    <p>LinkedIn: <a href="https://linkedin.com">View Profile</a></p>
+    <div class="card">
+        Email: hgolluri@gmail.com<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/hannahgolluri/">View Profile</a>
+    </div>
 </section>
 
 <footer>
-    © 2026 Hannah Moses | GitHub Pages Portfolio
+    © 2026 Cloud & IT Portfolio
 </footer>
 
 </body>

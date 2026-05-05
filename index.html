@@ -8,8 +8,8 @@
 <style>
     body {
         margin: 0;
-        font-family: 'Arial', sans-serif;
-        background: #f4f6fb;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f5f7fb;
         color: #333;
     }
 
@@ -18,7 +18,7 @@
         background: linear-gradient(135deg, #1f4e79, #2d89ef);
         color: white;
         text-align: center;
-        padding: 70px 20px;
+        padding: 80px 20px;
     }
 
     header h1 {
@@ -33,62 +33,67 @@
         opacity: 0.9;
     }
 
-    /* ANIMATION */
     @keyframes fadeIn {
-        from {opacity: 0; transform: translateY(-10px);}
+        from {opacity: 0; transform: translateY(-15px);}
         to {opacity: 1; transform: translateY(0);}
     }
 
-    /* SECTIONS */
+    /* SECTION LAYOUT */
     section {
-        max-width: 1000px;
-        margin: 30px auto;
-        padding: 20px;
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
     }
 
     h2 {
         color: #1f4e79;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
-    /* CARD DESIGN */
+    /* CARD STYLE */
     .card {
         background: white;
         padding: 20px;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 14px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
     }
 
     .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
-    ul {
-        line-height: 1.8;
-    }
-
-    /* SKILLS GRID */
+    /* GRID */
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+
+    /* TAG STYLE */
+    .tag {
+        display: inline-block;
+        background: #eaf2ff;
+        color: #1f4e79;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin: 3px;
     }
 
     /* CONTACT */
     a {
         color: #2d89ef;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     footer {
         text-align: center;
-        padding: 20px;
-        font-size: 14px;
+        padding: 30px;
         color: gray;
+        font-size: 13px;
     }
 </style>
 </head>
@@ -96,88 +101,139 @@
 <body>
 
 <header>
-    <h1> Hannah Golluri|Cloud & IT Support Portfolio</h1>
-    <p>Cloud & IT Support Aspirant | AWS Trainee</p>
+    <h1> HANNAH GOLLURI <h1>
+    <h1> Cloud & IT Support Portfolio</h1>
+    <p>Aspiring Cloud Support Professional | AWS Trainee | IT & Operations Experience</p>
 </header>
 
+<!-- ABOUT -->
 <section>
     <h2>About Me</h2>
     <div class="card">
-        An aspiring Cloud and IT Support professional with a Bachelor’s degree in Information Technology and AWS training through Per Scholas.
-        Completed Cisco certifications in Operating Systems and Computer Hardware. Strong foundation in IT fundamentals, troubleshooting,
-        and cloud basics with hands-on AWS lab experience.
+        Aspiring Cloud and IT Support professional with AWS training and hands-on experience in EC2, S3, IAM, and VPC. 
+        Strong foundation in Linux, networking fundamentals, and system troubleshooting with real-world experience in banking and education environments. 
+        Focused on building a career in Cloud Support and IT operations.
     </div>
 </section>
 
+<!-- SKILLS -->
 <section>
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
+
     <div class="grid">
-        <div class="card">☁️ AWS EC2, S3, IAM Basics</div>
-        <div class="card">🐧 Linux Operating System</div>
-        <div class="card">🪟 Windows Support</div>
-        <div class="card">🛠 Hardware Troubleshooting</div>
-        <div class="card">💬 Communication Skills</div>
-        <div class="card">⏱ Time Management</div>
-        <div class="card">🔧 IT Support Fundamentals</div>
-        <div class="card">🧠 Problem Solving</div>
+        <div class="card">
+            <h3>☁️ Cloud (AWS)</h3>
+            <span class="tag">EC2</span>
+            <span class="tag">S3</span>
+            <span class="tag">IAM</span>
+            <span class="tag">VPC</span>
+            <span class="tag">CLI</span>
+            <span class="tag">Auto Scaling</span>
+        </div>
+
+        <div class="card">
+            <h3>🐧 Linux</h3>
+            <span class="tag">Shell Scripting</span>
+            <span class="tag">Permissions</span>
+            <span class="tag">Users & Groups</span>
+            <span class="tag">File Management</span>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Networking</h3>
+            <span class="tag">Subnets</span>
+            <span class="tag">Security Groups</span>
+            <span class="tag">NACL</span>
+            <span class="tag">VPC</span>
+        </div>
+
+        <div class="card">
+            <h3>💻 Tools</h3>
+            <span class="tag">Windows</span>
+            <span class="tag">Linux</span>
+            <span class="tag">MS Office</span>
+            <span class="tag">Google Workspace</span>
+        </div>
     </div>
 </section>
 
+<!-- TRAINING -->
 <section>
-    <h2>Education</h2>
+    <h2>AWS Training</h2>
     <div class="card">
-        <b>Bachelor of Technology – Information Technology</b><br>
-        Bhoj Reddy Engineering College, India<br>
-        First Class with Distinction (75%+)
+        Full-time AWS re/Start training focused on cloud computing, Linux, networking, and AWS services including EC2, S3, IAM, Lambda, and VPC architecture. Hands-on labs include cloud deployment and system administration tasks.
     </div>
 </section>
 
-<section>
-    <h2>Certifications</h2>
-    <div class="card">
-        ✔ Cisco – Operating Systems Basics<br>
-        ✔ Cisco – Computer Hardware Basics<br>
-        ✔ AWS Training (Per Scholas – In Progress)
-    </div>
-</section>
-
+<!-- PROJECTS -->
 <section>
     <h2>Projects</h2>
 
-    <div class="card">
-        <b>☁️ AWS EC2 Instance Deployment</b>
-        <p>Launched and configured EC2 instances, set up security groups, and connected via SSH.</p>
-    </div>
+    <div class="grid">
 
-    <div class="card">
-        <b>🐧 Linux Command Line Practice</b>
-        <p>Practiced file navigation, permissions, and system commands in Linux environment.</p>
-    </div>
+        <div class="card">
+            <h3>☁️ EC2 Deployment</h3>
+            <p>Launched and configured EC2 instances, set up security groups, and accessed Linux servers via SSH.</p>
+        </div>
 
-    <div class="card">
-        <b>🛠 IT Troubleshooting Labs</b>
-        <p>Completed structured troubleshooting scenarios involving OS and system issues.</p>
+        <div class="card">
+            <h3>🌐 VPC Setup</h3>
+            <p>Created Virtual Private Cloud with subnets, routing tables, and internet gateways.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐧 Linux Lab</h3>
+            <p>Practiced Linux commands, file permissions, shell scripting, and system navigation.</p>
+        </div>
+
     </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section>
-    <h2>Experience</h2>
+    <h2>Professional Experience</h2>
+
     <div class="card">
-        Developed strong organizational, multitasking, and problem-solving skills through real-life experience managing responsibilities during relocation and full-time parenting.
+        <h3>Preschool Teacher | USA</h3>
+        Managed classroom activities for 20+ students, developed lesson plans, and communicated with parents. Strengthened communication, multitasking, and organization skills.
     </div>
+
+    <div class="card">
+        <h3>Bank Clerical Associate | State Bank of India</h3>
+        Processed 100–150 daily banking transactions including payments, transfers, and cheque processing with high accuracy and compliance.
+    </div>
+
 </section>
 
+<!-- EDUCATION -->
+<section>
+    <h2>Education</h2>
+
+    <div class="card">
+        <b>AWS re/Start Training</b> – Per Scholas (St. Louis, MO)
+    </div>
+
+    <div class="card">
+        <b>Bachelor of Science in Information Technology</b><br>
+        Bhoj Reddy Engineering College, India
+    </div>
+
+</section>
+
+<!-- CONTACT -->
 <section>
     <h2>Contact</h2>
     <div class="card">
-        Email: hgolluri@gmail.com<br>
-        LinkedIn: <a href="https://www.linkedin.com/in/hannahgolluri/">View Profile</a>
+        LinkedIn: <a href="https://www.linkedin.com/in/hannahgolluri/">Add your LinkedIn</a><br>
+        Portfolio: <a href="https://hannahgolluri.github.io/Hannahgolluri/">Githiub Link</a><br>
+        Email: hgolluri@gmail.com
     </div>
 </section>
 
 <footer>
-    © 2026 Cloud & IT Portfolio
+    © 2026 Cloud & IT Portfolio | Built with GitHub Pages
 </footer>
 
 </body>
 </html>
+

@@ -1,253 +1,264 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Cloud & IT Portfolio</title>
+<title>Hannah Golluri | Cloud & IT Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-    body {
-        margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: #f5f7fb;
-        color: #333;
-    }
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+}
 
-    /* HEADER */
-    header {
-        background: linear-gradient(135deg, #1f4e79, #2d89ef);
-        color: white;
-        text-align: center;
-        padding: 80px 20px;
-    }
+header {
+    background: linear-gradient(135deg, #1f4e79, #2d89ef);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 42px;
-        animation: fadeIn 1s ease-in-out;
-    }
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
 
-    header p {
-        font-size: 18px;
-        margin-top: 10px;
-        opacity: 0.9;
-    }
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
 
-    @keyframes fadeIn {
-        from {opacity: 0; transform: translateY(-15px);}
-        to {opacity: 1; transform: translateY(0);}
-    }
+section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-    /* SECTION LAYOUT */
-    section {
-        max-width: 1100px;
-        margin: 40px auto;
-        padding: 0 20px;
-    }
+h2 {
+    color: #1f4e79;
+    margin-bottom: 20px;
+}
 
-    h2 {
-        color: #1f4e79;
-        margin-bottom: 20px;
-    }
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
 
-    /* CARD STYLE */
-    .card {
-        background: white;
-        padding: 20px;
-        border-radius: 14px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-        transition: all 0.3s ease;
-    }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
-    .card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
 
-    /* GRID */
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 20px;
-    }
+.tag {
+    display: inline-block;
+    background: #eaf2ff;
+    color: #1f4e79;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 3px;
+}
 
-    /* TAG STYLE */
-    .tag {
-        display: inline-block;
-        background: #eaf2ff;
-        color: #1f4e79;
-        padding: 5px 10px;
-        border-radius: 20px;
-        font-size: 12px;
-        margin: 3px;
-    }
+a {
+    color: #2d89ef;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-    /* CONTACT */
-    a {
-        color: #2d89ef;
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    footer {
-        text-align: center;
-        padding: 30px;
-        color: gray;
-        font-size: 13px;
-    }
+footer {
+    text-align: center;
+    padding: 30px;
+    color: gray;
+    font-size: 13px;
+}
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1> HANNAH GOLLURI <h1>
-    <h1> Cloud & IT Support Portfolio</h1>
-    <p>Aspiring Cloud Support Professional | AWS Trainee | IT & Operations Experience</p>
+    <h1>HANNAH GOLLURI</h1>
+    <p>Cloud & IT Support Portfolio</p>
+    <p>Aspiring Cloud Support Engineer | AWS re/Start | Linux | Networking | Troubleshooting</p>
 </header>
 
-<!-- ABOUT -->
 <section>
     <h2>About Me</h2>
     <div class="card">
-        Aspiring Cloud and IT Support professional with AWS training and hands-on experience in EC2, S3, IAM, and VPC. 
-        Strong foundation in Linux, networking fundamentals, and system troubleshooting with real-world experience in banking and education environments. 
-        Focused on building a career in Cloud Support and IT operations.
+        Aspiring Cloud Support professional with AWS re/Start training and hands-on experience in EC2, S3, IAM, and VPC configuration. Strong foundation in Linux administration, networking fundamentals, and system troubleshooting within cloud environments.<br><br>
+        Brings proven experience from high-volume, customer-facing roles, consistently processing 100–150 daily transactions with accuracy and attention to detail. Skilled in identifying issues, resolving discrepancies, and maintaining operational efficiency.<br><br>
+        Known for strong communication, problem-solving, and adaptability, with a focus on delivering reliable technical support and building scalable cloud solutions.
     </div>
 </section>
 
-<!-- SKILLS -->
 <section>
     <h2>Technical Skills</h2>
-
     <div class="grid">
-        <div class="card">
-            <h3>☁️ Cloud (AWS)</h3>
-            <span class="tag">EC2</span>
-            <span class="tag">S3</span>
-            <span class="tag">IAM</span>
-            <span class="tag">VPC</span>
-            <span class="tag">CLI</span>
-            <span class="tag">Auto Scaling</span>
-        </div>
 
-        <div class="card">
-            <h3>🐧 Linux</h3>
-            <span class="tag">Shell Scripting</span>
-            <span class="tag">Permissions</span>
-            <span class="tag">Users & Groups</span>
-            <span class="tag">File Management</span>
-        </div>
-
-        <div class="card">
-            <h3>🌐 Networking</h3>
-            <span class="tag">Subnets</span>
-            <span class="tag">Security Groups</span>
-            <span class="tag">NACL</span>
-            <span class="tag">VPC</span>
-        </div>
-
-        <div class="card">
-            <h3>💻 Tools</h3>
-            <span class="tag">Windows</span>
-            <span class="tag">Linux</span>
-            <span class="tag">MS Office</span>
-            <span class="tag">Google Workspace</span>
-        </div>
+```
+    <div class="card">
+        <h3>☁️ Cloud (AWS)</h3>
+        <span class="tag">EC2</span>
+        <span class="tag">S3</span>
+        <span class="tag">IAM</span>
+        <span class="tag">VPC</span>
+        <span class="tag">AWS CLI</span>
+        <span class="tag">Auto Scaling</span>
+        <span class="tag">Systems Manager</span>
     </div>
+
+    <div class="card">
+        <h3>🐧 Linux</h3>
+        <span class="tag">Command Line</span>
+        <span class="tag">Users & Groups</span>
+        <span class="tag">File Permissions</span>
+        <span class="tag">Process Monitoring</span>
+        <span class="tag">Shell Scripting</span>
+    </div>
+
+    <div class="card">
+        <h3>🌐 Networking</h3>
+        <span class="tag">Subnets</span>
+        <span class="tag">Route Tables</span>
+        <span class="tag">Internet Gateway</span>
+        <span class="tag">NAT Gateway</span>
+        <span class="tag">Security Groups</span>
+        <span class="tag">NACL</span>
+        <span class="tag">TCP/IP</span>
+    </div>
+
+    <div class="card">
+        <h3>💻 Tools</h3>
+        <span class="tag">Windows</span>
+        <span class="tag">Linux</span>
+        <span class="tag">SSH</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">MS Office</span>
+        <span class="tag">Google Workspace</span>
+    </div>
+
+</div>
+```
+
 </section>
 
-<!-- TRAINING -->
 <section>
     <h2>AWS Training</h2>
     <div class="card">
-        Full-time AWS re/Start training focused on cloud computing, Linux, networking, and AWS services including EC2, S3, IAM, Lambda, and VPC architecture. Hands-on labs include cloud deployment and system administration tasks.
+        Completed a full-time AWS re/Start program focused on cloud computing, Linux system administration, networking, and AWS services.<br><br>
+        Gained hands-on experience with EC2, S3, IAM, VPC, Auto Scaling, and Systems Manager through real-world labs involving deployment, configuration, and troubleshooting.
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section>
     <h2>Projects</h2>
-
     <div class="grid">
 
-        <div class="card">
-            <h3>☁️ EC2 Deployment</h3>
-            <p>Launched and configured EC2 instances, set up security groups, and accessed Linux servers via SSH.</p>
-        </div>
-
-        <div class="card">
-            <h3>🌐 VPC Setup</h3>
-            <p>Created Virtual Private Cloud with subnets, routing tables, and internet gateways.</p>
-        </div>
-
-        <div class="card">
-            <h3>🐧 Linux Lab</h3>
-            <p>Practiced Linux commands, file permissions, shell scripting, and system navigation.</p>
-        </div>
-
+```
+    <div class="card">
+        <h3>☁️ EC2 Deployment & Configuration</h3>
+        <p>Launched and configured EC2 instances, implemented security groups, and connected to Linux servers using SSH for system administration tasks.</p>
     </div>
+
+    <div class="card">
+        <h3>🌐 VPC Network Design</h3>
+        <p>Designed a VPC with public and private subnets, configured route tables, and enabled internet access using an Internet Gateway.</p>
+    </div>
+
+    <div class="card">
+        <h3>🔧 Cloud Troubleshooting</h3>
+        <p>Diagnosed EC2 connectivity issues by analyzing routing, subnet configuration, and public IP settings to restore internet access.</p>
+    </div>
+
+    <div class="card">
+        <h3>🐧 Linux Administration</h3>
+        <p>Performed file management, permissions handling, user administration, and system navigation using Linux command line.</p>
+    </div>
+
+</div>
+```
+
 </section>
 
-<!-- EXPERIENCE -->
 <section>
     <h2>Professional Experience</h2>
 
-    <div class="card">
-        <h3>Preschool Teacher | USA</h3>
-        Managed classroom activities for 20+ students, developed lesson plans, and communicated with parents. Strengthened communication, multitasking, and organization skills.
-    </div>
+```
+<div class="card">
+    <h3>Preschool Teacher | Arlington Care and Learn, MO</h3>
+    <p>Managed classroom activities for 20+ students, improving organization, multitasking, and communication in a fast-paced environment.</p>
+</div>
 
-    <div class="card">
-        <h3>Bank Clerical Associate | State Bank of India</h3>
-        Processed 100–150 daily banking transactions including payments, transfers, and cheque processing with high accuracy and compliance.
-    </div>
+<div class="card">
+    <h3>Bank Clerical Associate | State Bank of India</h3>
+    <p>Processed 100–150 daily transactions with high accuracy and improved record accuracy by 15% through validation and cross-checking.</p>
+</div>
+```
 
 </section>
 
-<!-- EDUCATION -->
 <section>
     <h2>Education</h2>
 
-    <div class="card">
-        <b>AWS re/Start Training</b> – Per Scholas (St. Louis, MO)
-    </div>
+```
+<div class="card">
+    <b>AWS re/Start Program</b><br>
+    Per Scholas – St. Louis, MO<br>
+    Expected: August 2026
+</div>
 
-    <div class="card">
-        <b>Bachelor of Science in Information Technology</b><br>
-        Bhoj Reddy Engineering College, India
-    </div>
+<div class="card">
+    <b>Bachelor of Science in Information Technology</b><br>
+    Bhoj Reddy Engineering College, India<br>
+    Graduated: 2012
+</div>
+```
 
 </section>
 
-<!-- CONTACT -->
 <section>
     <h2>Contact</h2>
     <div class="card">
 
-        LinkedIn:  
-        <a href="https://www.linkedin.com/in/hannahgolluri/" target="_blank">
-            LinkedIn Profile
-        </a>
+```
+    LinkedIn:<br>
+    <a href="https://www.linkedin.com/in/hannahgolluri/" target="_blank">
+        View Profile
+    </a>
 
-        <br><br>
+    <br><br>
 
-        Portfolio:  
-        <a href="https://hannahgolluri.github.io/Hannahgolluri/" target="_blank">
-            Live GitHub Portfolio
-        </a>
+    Portfolio:<br>
+    <a href="https://hannahgolluri.github.io/Hannahgolluri/" target="_blank">
+        Live Site
+    </a>
 
-        <br><br>
+    <br><br>
 
-        Email: hgolluri@gmail.com
+    Email:<br>
+    hgolluri@gmail.com
 
-    </div>
+</div>
+```
+
 </section>
 
 <footer>
-    © 2026 Cloud & IT Portfolio | Built with GitHub Pages
+    © 2026 Hannah Golluri | Cloud & IT Portfolio
 </footer>
 
 </body>
 </html>
-
